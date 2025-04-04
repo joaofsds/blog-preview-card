@@ -1,17 +1,11 @@
 @font-face {
   font-family: "Figtree Extra Bold";
   src: url(./assets/fonts/static/Figtree-ExtraBold.ttf);
-  font-weight: 800;
-  line-height: 150%;
-  letter-spacing: 0px;
 }
 
 @font-face {
   font-family: "Figtree Medium";
   src: url(./assets/fonts/static/Figtree-Medium.ttf);
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: 0px;
 }
 :root {
   /*colors*/
@@ -25,12 +19,102 @@
   --ff-medium: "Figtree Medium", sans-serif;
 
   /*font sizes*/
-  --fs-small: 0.875rem;
-  --fs-medium: 1rem;
-  --fs-big: 1.5rem;
+  --fs-small: 0.875rem; /*14px*/
+  --fs-medium: 1rem; /*16px*/
+  --fs-big: 1.5rem; /*24px*/
+
+  /*Spacing*/
+  --spc-300: 1.5rem; /*24px*/
+  --spc-150: 0.75rem; /*12px*/
+  --spc-100: 0.5rem; /*8px*/
+  --spc-50: 0.25rem; /*4px*/
 }
 
-.title {
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--clr-yellow);
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-family: "Figtree Medium";
+  color: var(--clr-gray-950);
+}
+
+.card-title:hover {
   font-family: "Figtree Medium";
   color: var(--clr-yellow);
+  cursor: pointer;
+}
+
+.card-container {
+  height: fit-content;
+  width: 340px;
+  background: var(--clr-white);
+  border: solid var(--clr-gray-950) 1.5px;
+  border-radius: 20px;
+  padding: var(--spc-300);
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, 1);
+}
+
+.card-img {
+  width: 100%;
+  height: 200pxs;
+  border-radius: 10px;
+  margin-bottom: var(--spc-300);
+}
+
+.card-label {
+  display: inline-block;
+  background: var(--clr-yellow);
+  font-family: var(--ff-bold);
+  padding: var(--spc-50) var(--spc-150);
+  border-radius: 4px;
+}
+
+.card-date {
+  font-family: var(--ff-medium);
+  font-size: var(--fs-small);
+}
+
+.card-title {
+  font-family: var(--ff-bold);
+  font-size: var(--fs-big);
+}
+
+.card-description {
+  font-family: var(--ff-medium);
+  font-size: var(--fs-medium);
+  color: var(--clr-gray-500);
+  margin-bottom: var(--spc-100);
+  line-height: 150%;
+}
+
+.card-author-container {
+  display: flex;
+  align-items: center;
+  margin-top: var(--spc-300);
+}
+.card-author-img {
+  height: 32px;
+  width: 32px;
+  padding: 0 var(--spc-150) 0 0;
+}
+
+.card-author-name {
+  display: inline-block;
+  font-family: var(--ff-bold);
+  font-size: var(--fs-small);
+}
+
+@media (width <= 375px) {
+  .card-container {
+    width: 283px;
+    height: 477px;
+  }
 }
