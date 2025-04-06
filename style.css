@@ -39,6 +39,7 @@ body {
   background: var(--clr-yellow);
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .card-title {
