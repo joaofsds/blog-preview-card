@@ -8,7 +8,7 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/)
+![](./screenshot.jpg)
 
 ### Links
 
